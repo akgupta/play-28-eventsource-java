@@ -1,0 +1,9 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An EventSource stream for sending the current time down to the client
+GET     /listen                     controllers.HomeController.listen
+
+# An EventSource stream managed by an Akka Actor
+GET     /connect                     controllers.HomeController.connect
